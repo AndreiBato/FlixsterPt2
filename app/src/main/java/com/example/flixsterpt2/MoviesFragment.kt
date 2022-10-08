@@ -115,8 +115,19 @@ class MoviesFragment : Fragment(), OnListFragmentInteractionListener {
      * What happens when a particular book is clicked.
      */
     override fun onItemClick(item: Movie) {
-        Toast.makeText(context, "test: " + item.title, Toast.LENGTH_LONG).show()
+//        Toast.makeText(context, "test: " + item.title, Toast.LENGTH_LONG).show()
+
+        val bundle = Bundle()
+        bundle.putString("title", item.title)
+        bundle.putString("overview", item.overview)
+        bundle.putString("posterPath", item.posterPath)
+        bundle.putString("release_date", item.release_date)
+
         val intent = Intent(context, SecondActivity::class.java)
+        intent.putExtras(bundle)
+
+
+
         startActivity(intent)
     }
 

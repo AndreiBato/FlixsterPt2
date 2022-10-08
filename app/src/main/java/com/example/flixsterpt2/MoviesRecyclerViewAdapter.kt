@@ -16,7 +16,6 @@ import kotlin.math.log
  * [RecyclerView.Adapter] that can display a [BestSellerBook] and makes a call to the
  * specified [OnListFragmentInteractionListener].
  */
-const val ARTICLE_EXTRA = "ARTICLE_EXTRA"
 class MoviesRecyclerViewAdapter (
     private val movies: List<Movie>,
     private val mListener: OnListFragmentInteractionListener?
