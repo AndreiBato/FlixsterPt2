@@ -1,49 +1,48 @@
-# Android Project 3 - FlixsterPt1
+# Android Project 4 - FlixsterPt2
 
 Submitted by: Andrei Bato
 
- FlixsterPt1 is a movie browsing app that allows users to browse movies currently playing in theaters.
+FlixsterPt2 is a movie browsing app that allows users to browse the latest upcoming movies and click on them to the description and release date. 
 
-Time spent: 10 hours spent in total
+Time spent: 5 hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
-- [x] **Parse through JSON data and implement a RecyclerView to display all movies**
-- [x] **Use Glide to load and display movie poster images**
+- [x] **Choose any endpoint on The MovieDB API except `now_playing`**
+  - Chosen Endpoint: `upcoming`
+- [x] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
+- [x] **Use Glide to load and display at least one image per entry**
+- [x] **Click on an entry to view specific details about that entry using Intents**
 
 The following **optional** features are implemented:
 
-- [x] Improve and customize the user interface through styling and coloring
-- [ ] Implement orientation responsivity
-  - App should neatly arrange data in both landscape and portrait mode
-- [x] Implement Glide to display placeholder graphics during loading
-  - Note: this feature is difficult to capture in a GIF without throttling internet speeds.  Instead, include an additional screencap of your Glide code implementing the feature.  (<10 lines of code)
+- [ ] **Add another API call and RecyclerView that lets the user interact with different data.** 
+- [ ] **Add rounded corners to the images using the Glide transformations**
+- [ ] **Implement a shared element transition when user clicks into the details of a movie**
 
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
-- [x] Added Testing pressing of each title
+- [x] Added a change in color and theme
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='FlixsterPt1WalkThrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='FlixsterPt2WalkThrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/). 
 
-
 ## Notes
 
-I couldnt figure out how to make the app landscape even with making landscape specific xml files. Also 
-connecting the API was also difficult.
+Describe any challenges encountered while building the app.
+I was using the flixsterpt1 assignment and I had trouble with the intent. The biggest problem was getting the data, so I figured out how to use bundle(). 
 
 ## License
 
-    Copyright [2022] [Andrei Bato]
+    Copyright 2022 Andrei Bato
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
